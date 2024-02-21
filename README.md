@@ -130,7 +130,17 @@ git revert <ID>
 ```
   
 **14. Push/Pull**.
-1. Pushe den Inhalt deines Lokalen Repos zum Remote Repo in einen bestimmten Branch:
+1. Pulle den Inhalt des Remote-Repo in dein Lokales Repository 
+```sh
+git pull <name von remote> <branch>
+```
+
+2. Falls du eine Meldung bekommst wie "Refusing to merge unrelated histories" dann liegt das daran das deine Historien der beide Repos zu unterschiedlich sind. Du kannst diesen Error lösen mit:
+```sh
+git pull <name von remote> <branch> --allow-unrelated-histories
+```
+
+3. Pushe den Inhalt deines Lokalen Repos zum Remote Repo in einen bestimmten Branch:
 ```shell
 git push <name von Repo> <branch>
 ```  
