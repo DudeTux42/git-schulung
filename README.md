@@ -142,7 +142,10 @@ git pull <name von remote> <branch> --allow-unrelated-histories
 
 3. Pushe den Inhalt deines Lokalen Repos zum Remote Repo in einen bestimmten Branch:
 ```shell
-git push <name von Repo> <branch>
+# Das erste mal mit -u flag um den upstrem festzulegen
+git push -u <name von Repo> <branch>
+# Danach reicht 
+git push 
 ```  
 
 **15. Git clone**.
